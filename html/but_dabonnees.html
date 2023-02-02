@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>But d'abonnés - Fifa Skills Library</title>
+    <link rel="shortcut icon" href="/img/logo_rond.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/but_dabonnes.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="themes/6/js-image-slider.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script>
+      function showResponsiveMenu() {
+        var menu = document.getElementById("topnav_responsive_menu");
+        var icon = document.getElementById("topnav_hamburger_icon");
+        var root = document.getElementById("root");
+        if (menu.className === "") {
+          menu.className = "open";
+          icon.className = "open";
+          root.style.overflowY = "hidden";
+        } else {
+          menu.className = "";
+          icon.className = "";
+          root.style.overflowY = "";
+        }
+      }
+
+  
+      function videoUrl(hey) {
+        document.getElementById("slider").src = hey;
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <a href="index.html">
+          <img id="logo" src="/img/newlogo2.jpg" alt=""
+        /></a>
+
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/html/but_dabonnees.html"
+            >But_d'abonnés
+          </a>
+          <a class="topnav_link" href="/html/fifa_presentation.html"
+            >Présentation_Fifa
+          </a>
+          <a class="topnav_link" href="/html/volta_presentation.html"
+            >Présentation_Volta
+          </a>
+          <a class="topnav_link" href="/html/pre_bibli.html">Bibliotèques </a>
+          <a class="topnav_link" href="/html/nous_joindre.html"
+            >Nous_joindre</a
+          >
+        </nav>
+
+        <a
+          id="topnav_hamburger_icon"
+          href="javascript:void(0);"
+          onclick="showResponsiveMenu()"
+        >
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li><a href="index.html">Accueil </a></li>
+            <li><a href="/html/but_dabonnees.html">But_d'abonnés </a></li>
+            <li>
+              <a href="/html/fifa_presentation.html">Présentation_Fifa </a>
+            </li>
+            <li>
+              <a href="/html/volta_presentation.html">Présentation_Volta </a>
+            </li>
+            <li><a href="/html/pre_bibli.html">Bibliotèques </a></li>
+            <li><a href="/html/nous_joindre.html">Nous_joindre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </nav>
+    <div id="div1">
+      <div id="enfant">
+        <h1
+          data-aos="zoom-out-right"
+          style="
+            color: aliceblue;
+            font-family: 'fredoka one', cursive;
+            font-weight: 100;
+            text-align: center;
+            font-size: 40px;
+          "
+        >
+          But d'abonnés
+        </h1>
+      </div>
+    </div>
+    <div data-aos="fade-down" data-aos-duration="1500" id="envoie">
+      <h2>Envoies nous tes plus beaux buts!</h2>
+      <p
+        style="
+          font-size: 13px;
+          font-weight: 600;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          font-family: system-ui;
+        "
+      >
+        Nos abonnés nous envoient régulièrement leurs plus beaux buts marqués
+        durant leurs matchs Fifa et Fifa Volta. Marque ton plus beau but et
+        envoie le nous pour avoir toi aussi la chance de voir ton but
+        sélectionné et publié sur notre page.
+        <br />
+        <br />
+        Lorsque tu nous envoies ton but, n'oublies pas d'inscrire ton pseudo et
+        ta plateforme de jeu.
+        <br>
+        <br>
+        Cliques sur les icônes en dessous pour visionner les buts 
+      </p>
+    <section>
+      <video
+      class="eager"
+        autoplay
+        muted
+        loop
+        id="slider"
+        src="/videos/volta_celebrations.mp4"
+      ></video>
+      <h3 style="font-weight: 600; font-family: 'fredoka one', cursive; font-size: 17px; text-align: center;">Novembre 2022</h3>
+      <ul class="navigation">
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/ney_raimbow_fancy_bycicle.mp4')">
+          <img loading="lazy" src="/img/fifalogo.png" alt="" />
+          <p style="text-align: center;"> the_authentic- PS4</p>
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/but_fifa_pogba_alternative_okkochaflip_goal.mp4')">
+          <img loading="lazy" src="/img/fifalogo.png" alt="" />
+          <p style="text-align: center;">madox92 - PC</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/volta_goal3.mp4')">
+          <img loading="lazy" src="/img/volta.jpg" alt="" />
+          <p style="text-align: center;">nebulon_II - PS4</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/fifa_goal_long_skillrun.mp4')">
+          <img loading="lazy" src="/img/fifalogo.png" alt="" />
+          <p style="text-align: center;">cruyf93 - PS4</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/volta_goal2.mp4')">
+          <img loading="lazy" src="/img/volta.jpg" alt="" />
+          <p style="text-align: center;">okocha_91 - PS5</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/volta_goal1.mp4')">
+          <img loading="lazy" src="/img/volta.jpg" alt="" />
+          <p style="text-align: center;">hehe92 - XBOX</p>
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/volta_goal6.mp4')">
+          <img loading="lazy" src="/img/volta.jpg" alt="" />
+          <p style="text-align: center;">lockdown - PS5</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/butfifaneylongskillrun.mp4')">
+          <img loading="lazy" src="/img/fifalogo.png" alt="" />
+          <p style="text-align: center;">vanille_caramel - PC</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/volta_goal4.mp4')">
+          <img loading="lazy" src="/img/volta.jpg" alt="" />
+          <p style="text-align: center;">lumiere_tms - XBOX</p>
+
+        </li>
+        <li style="display: flex; flex-direction: column;" onclick="videoUrl('/videos/volta_goal5.mp4')">
+          <img loading="lazy" src="/img/volta.jpg" alt="" />
+          <p style="text-align: center;">r9_75 - PS4</p>
+        </li>
+      </li>
+      </ul>
+    </section>
+  </div>
+    <footer>
+      <div>
+        <img
+          style="
+            margin-top: 40px;
+            width: 150px;
+            border: solid 5px;
+            border-radius: 50%;
+          "
+          src="/img/logo_rond.png"
+          alt=""
+        />
+        <h4>Fifa Skills Library</h4>
+      </div>
+      <div>
+        <ul id="menu_footer">
+          <a style="text-decoration: none" href="index.html">Accueil</a
+          ><br />
+          <a style="text-decoration: none" href="/html/but_dabonnees.html"
+            >But_d'abonnés</a
+          ><br />
+          <a style="text-decoration: none" href="/html/fifa_presentation.html"
+            >Présentation_Fifa</a
+          ><br />
+          <a style="text-decoration: none" href="/html/pre_bibli.html"
+            >Bibliotèques</a
+          ><br />
+          <a style="text-decoration: none" href="/html/nous_joindre.html"
+            >Nous_joindre</a
+          ><br />
+        </ul>
+      </div>
+      <div id="footer_logos">
+        <a target="_blank" href="https:/facebook.com"
+          ><img src="/img/facebook.png" alt=""
+        /></a>
+        <a target="_blank" href="https:/instagram.com">
+          <img src="/img/instagram (1).png" alt=""
+        /></a>
+        <a target="_blank" href="https:/twitter.com">
+          <img src="/img/twitter.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</html>

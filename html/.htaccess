@@ -1,0 +1,4 @@
+<filesMatch ".(jpg|jpeg|png|mp4|gif|ico|txt|css|js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+#---------------------CODE POUR METTRE EN CACHE LES ELEMENTS --------------------

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil - Fifa Skills Library</title>
+    <link rel="shortcut icon" href="/img/logo_rond.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="./img/logo_rond.png" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <meta name="keywords" content="Fifa, Volta, Skills, Library, Tutos">
+    <meta name="description" content=" Bienvenue sur Fifa Skills Library !
+     Cette plateforme est conçu pour les fans souhaitant apprendre les tous
+    nouveaux gestes techniques de la célèbre franchise de EA -    
+     2 bibliotèques sont disponibles accompagnées de tutoriels : Fifa et Fifa Volta
+    ">
+  </head>
+  <body>
+    <div id="div_intro">
+      <video alt="" autoplay muted loop id="video_accueil">
+        <source
+          src="/videos/FIFA 20 VOLTA l GOAL COMPILATION _Heavyweight_ - YouTube - Google Chrome 2022-11-22 11-56-52.mp4"
+          type="video/mp4"
+        /> 
+      </video>
+      <a href="">
+        <img style=" border: solid 2px black; border-radius: 50%;" id="logo" data-aos="fade-down" src="/img/logo_rond.png" alt=""
+      /></a>
+      <h1 data-aos="fade-up" data-aos-duration="1500">Fifa Skills Library</h1>
+      <p  data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"  id="intro">
+        Bienvenue sur Fifa Skills Library ! <br />
+        <br />
+        Cette plateforme est conçu pour les fans souhaitant apprendre les tous
+        nouveaux gestes techniques de la célèbre franchise de EA
+        <BR></BR>
+        2 bibliotèques sont disponibles accompagnées de tutoriels : Fifa et Fifa Volta
+      </p>
+    </div>
+    <div id="superdiv_fifa_volta">
+    <!-- div fifa  -->
+    <a href="/html/fifa_presentation.html">
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" id="div_fifa"></div>
+    </a>
+    <!-- div volta  -->
+    <a href="./volta_presentation.html">
+      <div data-aos="fade-left"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" id="div_volta"></div>
+    </a>
+  </div>
+    <!-- div fifa_mini -->
+    <img data-aos="fade-down"
+    data-aos-offset="300"
+    data-aos-easing="ease-in-sine" id="fifa_mini" src="/img/fifa.avif" alt="" />
+    <!-- div volta_mini -->
+    <img data-aos="fade-down"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" id="volta_mini" src="/img/volta.jpg" alt="" />
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>

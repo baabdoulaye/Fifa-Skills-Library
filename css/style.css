@@ -1,0 +1,253 @@
+h1 {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  top: 1%;
+  font-size: 55px;
+  color: white;
+  font-family: "fredoka one", cursive;
+  position: absolute;
+}
+
+#intro {
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  top: 180px;
+  font-weight: 900;
+  position: absolute;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+  left: 0%;
+  position: absolute;
+  border-radius: 100%;
+}
+#video_accueil {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+}
+#div_intro {
+  width: 100%;
+}
+
+#volta_mini:hover {
+  opacity: 1;
+  transition: 1s;
+  box-shadow: 1px 1px 20px 10px rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+#volta_mini {
+  opacity: 0.5;
+  top: 320px;
+  right: 260px;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 100px;
+  position: absolute;
+  transition: transform 1s;
+}
+#fifa_mini {
+  opacity: 0.5;
+  top: 320px;
+  left: 260px;
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 100px;
+  position: absolute;
+  transition: transform 1s;
+}
+#fifa_mini:hover {
+  opacity: 1;
+  transition: 1s;
+  box-shadow: 1px 1px 20px 10px rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+#superdiv_fifa_volta {
+  padding-top: 410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#div_fifa {
+  opacity: 0.5;
+  background-image: url(/img/fifa19.jpg);
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: transform 1s;
+}
+#div_fifa:hover {
+  opacity: 1;
+  transition: 1s;
+  box-shadow: 1px 1px 20px 10px rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+#div_volta {
+  opacity: 0.5;
+  background-image: url(/img/voltaaa.jpg);
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: transform 1s;
+}
+
+#div_volta:hover {
+  opacity: 1;
+  transition: 1s;
+  box-shadow: 1px 1px 20px 10px rgb(255, 255, 255);
+  transform: scale(1.1);
+}
+
+/* --------------------------------------MEDIA QUERIES --------------------------------------------- */
+
+@media (max-width: 600px) {
+  H1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 450px) {
+  H1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 450px) {
+  #logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  #intro {
+    font-size: 100%;
+    color: black;
+  }
+}
+@media (max-width: 700px) {
+  h1 {
+    color: black;
+  }
+}
+@media (max-width: 600px) {
+  #intro {
+    top: 120px;
+  }
+}
+@media (max-width: 815px) {
+  #intro {
+    top: 100px;
+  }
+}
+@media (max-width: 950px) {
+  #superdiv_fifa_volta {
+    padding-top: 340px;
+  }
+}
+@media (max-width: 815px) {
+  #superdiv_fifa_volta {
+    padding-top: 260px;
+  }
+}
+@media (max-width: 600px) {
+  #superdiv_fifa_volta {
+    padding-top: 280px;
+  }
+}
+@media (max-width: 420px) {
+  #superdiv_fifa_volta {
+    padding-top: 330px;
+  }
+}
+@media (max-width: 700px) {
+  #video_accueil {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  #div_image {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  #volta_mini {
+    display: none;
+  }
+}
+@media (max-width: 950px) {
+  #fifa_mini {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  #superdiv_fifa_volta {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 700px) {
+  #div_fifa {
+    width: 160px;
+    height: 100px;
+  }
+}
+@media (max-width: 350px) {
+  #div_fifa {
+    width: 100px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 700px) {
+  #div_volta {
+    width: 160px;
+    height: 100px;
+  }
+}
+@media (max-width: 350px) {
+  #div_volta {
+    width: 100px;
+    height: 70px;
+  }
+}
+@media (max-width: 1100px) {
+  #div_fifa {
+    width: 180px;
+    height: 110px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #div_volta {
+    width: 180px;
+    height: 110px;
+  }
+}
+@media (max-width: 700px) {
+  body {
+    background-image: url("/img/colored\ backgrounf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

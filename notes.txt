@@ -1,0 +1,88 @@
+
+      /* * {
+        margin: 0;
+      }
+
+      .triangle {
+        border-top: 300px solid transparent;
+        border-bottom: 300px solid transparent;
+        border-left: 1700px solid red;
+        transform: rotate(120deg);
+      } */
+
+      /* .triangle {
+  border-top: 300px solid transparent;
+  border-bottom: 300px solid transparent;
+  border-left: 1000px solid;
+}
+.triangle img {
+  width: 25%;
+  margin-left: -60%;
+  margin-top: -4%;
+  border-radius: 100%;
+  transition: 1s;
+  position: absolute;
+}
+.triangle img:hover {
+  transform: scale(1.1);
+}
+.triangle_parent {
+  height: 600px;
+  background-image: url(/img/vivid-blurred-colorful-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+          <!-- <div class="triangle_parent">
+      <div class="triangle">
+        <img src="/img/voltaaa.jpg" alt="" />
+        <h2
+          style="
+            margin-top: -10%;
+            margin-left: -10%;
+            position: absolute;
+            font-family: 'fredoka one', cursive;
+          "
+        >
+          Envoies nous tes plus beaux buts!
+        </h2>
+      </div>
+    </div> -->
+      
+      triangle div
+-------------------------------------------------------------
+
+#video {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top ou bottom: 0%;
+  width: 100%;
+}
+POUR METTRE UNE VIDEO EN PLEIN ECRAN
+---------------------------------------------------------------
+POUR ECRIRE PAR DESSUS UNE VIDEO OU UNE IMAGE IL FAUT 
+QUE DANS LE CSS DU TEXTE QUON VEUT ECRIRE, ON INSCRIVE "POSITION absolute"
+-------------------------------------------------------------------------------------------
+
+
+.(id de l'élément):hover {
+  box-shadow: 1px 3px black;
+} -------------- POUR METTRE UN PETIT EFFET DE RELIEF COMME SUR UN BOUTON CLICKABLE---------
+
+------------------------------------------------------------------------
+    <a href="path_to_file" download="proposed_file_name">Download</a> BOUTTON POUR TELECHARGER FICHIER
+----------------------------------------------------------------
+
+A HRFEF # = LIEN POUR REMONTER EN HAUT DE LA PAGE 
+ -----------------------------------------------------------------------------
+
+ GIT ADD .
+ GIT COMMIT -M "ICI JINSCRI LE MESSAGE QUE JE VEUX, PAR EXEMPLE (mise a jour projet)
+ GIT PUSH
+
+ CE SONT LES COMMANDES POUR METTRE UN PROJET RELIé A GITHUB
+
+ ---------------------------------------------------------------------------
+ NPM START POUR LANCER L'API
+ ---------------------------------------

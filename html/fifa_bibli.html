@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fifa bibliotèque - Fifa Skills Library</title>
+    <link rel="shortcut icon" href="/img/logo_rond.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/fifa_bibli.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+      function showResponsiveMenu() {
+        var menu = document.getElementById("topnav_responsive_menu");
+        var icon = document.getElementById("topnav_hamburger_icon");
+        var root = document.getElementById("root");
+        if (menu.className === "") {
+          menu.className = "open";
+          icon.className = "open";
+          root.style.overflowY = "hidden";
+        } else {
+          menu.className = "";
+          icon.className = "";
+          root.style.overflowY = "";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <a href="index.html">
+          <img id="logo" src="/img/newlogo2.jpg" alt=""
+        /></a>
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/html/but_dabonnees.html"
+            >But_d'abonnés
+          </a>
+          <a class="topnav_link" href="/html/fifa_presentation.html"
+            >Présentation_Fifa
+          </a>
+          <a class="topnav_link" href="/html/volta_presentation.html"
+            >Présentation_Volta
+          </a>
+          <a class="topnav_link" href="/html/pre_bibli.html">Bibliotèques </a>
+          <a class="topnav_link" href="/html/nous_joindre.html"
+            >Nous_joindre</a
+          >
+        </nav>
+        <a
+          id="topnav_hamburger_icon"
+          href="javascript:void(0);"
+          onclick="showResponsiveMenu()"
+        >
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li><a href="index.html">Accueil </a></li>
+            <li><a href="/html/but_dabonnees.html">But_d'abonnés </a></li>
+            <li>
+              <a href="/html/fifa_presentation.html">Présentation_Fifa </a>
+            </li>
+            <li>
+              <a href="/html/volta_presentation.html">Présentation_Volta </a>
+            </li>
+            <li><a href="/html/pre_bibli.html">Bibliotèques </a></li>
+            <li><a href="/html/nous_joindre.html">Nous_joindre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </nav>
+    <main>
+      <h1>Bibliotèque Fifa</h1>
+    </main>
+    <div id="superdiv"></div>
+    <!-- ------------------------------------------------------------------------- -->
+    <div id="fullscreen">
+      <a href="#">
+        <video
+          autoplay
+          loop
+          id="fullscreenVideo"
+          src=""
+          onclick="videoUrl();"
+        ></video
+      ></a>
+      <span style="z-index: 1000" id="precedent"></span>
+      <span style="z-index: 1000" id="suivant"></span>
+    </div>
+    <footer>
+      <div>
+        <img
+          style="
+            margin-top: 40px;
+            width: 150px;
+            border: solid 5px;
+            border-radius: 50%;
+          "
+          src="/img/logo_rond.png"
+          alt=""
+        />
+        <h4>Fifa Skills Library</h4>
+      </div>
+      <div>
+        <ul id="menu_footer">
+          <a style="text-decoration: none" href="index.html">Accueil</a
+          ><br />
+          <a style="text-decoration: none" href="/html/but_dabonnees.html"
+            >But_d'abonnés</a
+          ><br />
+          <a style="text-decoration: none" href="/html/fifa_presentation.html"
+            >Présentation_Fifa</a
+          ><br />
+          <a style="text-decoration: none" href="/html/pre_bibli.html"
+            >Bibliotèques</a
+          ><br />
+          <a style="text-decoration: none" href="/html/nous_joindre.html"
+            >Nous_joindre</a
+          ><br />
+        </ul>
+      </div>
+      <div id="footer_logos">
+        <a target="_blank" href="https:/facebook.com"
+          ><img src="/img/facebook.png" alt=""
+        /></a>
+        <a target="_blank" href="https:/instagram.com">
+          <img src="/img/instagram (1).png" alt=""
+        /></a>
+        <a target="_blank" href="https:/twitter.com">
+          <img src="/img/twitter.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    var videos = [
+      ["/videos/fifabibli/4etoilles.mp4"],
+      ["/videos/fifabibli/5etoilesss.mp4"],
+      ["/videos/fifabibli/5etoilessss.mp4"],
+      ["/videos/fifabibli/4etoiles.mp4"],
+      ["/videos/fifabibli/5etoilees.mp4"],
+      ["/videos/fifabibli/5etoiles.mp4"],
+      ["/videos/fifabibli/5etoiless.mp4"],
+      ["/videos/fifabibli/5etoilesssss.mp4"],
+      ["/videos/fifabibli/5etoilessssss.mp4"],
+    ];
+
+    for (i = 0; i < videos.length; i++) {
+      document.querySelector(
+        "#superdiv"
+      ).innerHTML += `<video  onclick="videoUrl('${videos[i]}',${
+        i + 1
+      })"  muted loop  onmouseover="this.play()" onmouseout="this.pause(); this.currentTime=0;"  src="${
+        videos[i]
+      }"></video>`;
+    }
+  </script>
+  <script type="text/javascript">
+    function videoUrl(param = "", bouton = "") {
+      document.getElementById("fullscreenVideo").src = param;
+      var apparition_fullscreen = document.getElementById("fullscreen");
+      apparition_fullscreen.classList.toggle("active");
+
+      if (bouton < videos.length && bouton >= 0) {
+        document.querySelector(
+          "#suivant"
+        ).innerHTML = `<button onclick="videoUrlButton('${videos[bouton]}',${
+          bouton + 1
+        })" >suivant</button>`;
+        document.querySelector(
+          "#precedent"
+        ).innerHTML = `<button onclick="videoUrlButton('${videos[bouton]}',${
+          bouton - 1
+        })" >precedent</button>`;
+      }
+    }
+
+    function videoUrlButton(param = "", bouton = "") {
+      document.getElementById("fullscreenVideo").src = param;
+      var apparition_fullscreen = document.getElementById("fullscreen");
+
+      if (bouton < videos.length && bouton >= 0) {
+        document.querySelector(
+          "#suivant"
+        ).innerHTML = `<button onclick="videoUrlButton('${videos[bouton]}',${
+          bouton + 1
+        })" >suivant</button>`;
+        document.querySelector(
+          "#precedent"
+        ).innerHTML = `<button onclick="videoUrlButton('${videos[bouton]}',${
+          bouton - 1
+        })" >precedent</button>`;
+      }
+    }
+  </script>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nous joindre - Fifa Skills Library</title>
+    <link rel="shortcut icon" href="/img/logo_rond.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/nous_joindre.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script>
+      function showResponsiveMenu() {
+        var menu = document.getElementById("topnav_responsive_menu");
+        var icon = document.getElementById("topnav_hamburger_icon");
+        var root = document.getElementById("root");
+        if (menu.className === "") {
+          menu.className = "open";
+          icon.className = "open";
+          root.style.overflowY = "hidden";
+        } else {
+          menu.className = "";
+          icon.className = "";
+          root.style.overflowY = "";
+        }
+      }
+
+      // -------------js du formulaire-----------------------------
+      function toggle() {
+        var div_form = document.getElementById("blur");
+        div_form.classList.toggle("active");
+        var modal = document.getElementById("div_form");
+        modal.classList.toggle("active");
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div id="topnav" class="topnav">
+        <a href="index.html">
+          <img id="logo" src="/img/newlogo2.jpg" alt=""
+        /></a>
+
+        <!-- Classic Menu -->
+        <nav role="navigation" id="topnav_menu">
+          <a class="topnav_link" href="/html/but_dabonnees.html"
+            >But_d'abonnés
+          </a>
+          <a class="topnav_link" href="/html/fifa_presentation.html"
+            >Présentation_Fifa
+          </a>
+          <a class="topnav_link" href="/html/volta_presentation.html"
+            >Présentation_Volta
+          </a>
+          <a class="topnav_link" href="/html/pre_bibli.html">Bibliotèques </a>
+          <a class="topnav_link" href="/html/nous_joindre.html"
+            >Nous_joindre</a
+          >
+        </nav>
+
+        <a
+          id="topnav_hamburger_icon"
+          href="javascript:void(0);"
+          onclick="showResponsiveMenu()"
+        >
+          <!-- Some spans to act as a hamburger -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+
+        <!-- Responsive Menu -->
+        <nav role="navigation" id="topnav_responsive_menu">
+          <ul>
+            <li><a href="index.html">Accueil </a></li>
+            <li><a href="/html/but_dabonnees.html">But_d'abonnés </a></li>
+            <li>
+              <a href="/html/fifa_presentation.html">Présentation_Fifa </a>
+            </li>
+            <li>
+              <a href="/html/volta_presentation.html">Présentation_Volta </a>
+            </li>
+            <li><a href="/html/pre_bibli.html">Bibliotèques </a></li>
+            <li><a href="/html/nous_joindre.html">Nous_joindre</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </nav>
+    <main>
+      <div class="container" id="blur">
+        <H1>Clique sur le logo pour contacter nos équipes</H1>
+        <video
+          autoplay
+          muted
+          loop
+          src="/videos/FIFA 20 VOLTA l GOAL COMPILATION _Crown_ - YouTube - Google Chrome 2022-11-27 23-19-03.mp4"
+        ></video>
+        <div style="display: flex; justify-content: center;">
+          <a href="#" onclick="toggle()">
+            <img
+              id="bouton_formulaire"
+              src="/img/logo_rond.png"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+    <!-- --------------------------FORMULAIRE----------------------------------------------- -->
+    <div data-aos="zoom-in" id="div_form">
+      <form
+        name="contact"
+        action="function a creer en js"
+        data-netlify="true"
+        method="post"
+      >
+        <fieldset style="border: none">
+          <h2>Formulaire</h2>
+          <hr />
+          <label for="nom">Nom</label>
+          <input placeholder="Votre nom ici" type="text" name="nom" id="" />
+          <label for="prenom">Prénom</label>
+          <input
+            placeholder="Votre prénom ici"
+            type="text"
+            name="prenom"
+            id=""
+          />
+          <label for="Mail">Mail</label>
+          <input placeholder="Votre mail ici" type="email" name="mail" id="" />
+          <label for="message">Message</label>
+          <textarea
+            placeholder="Votre message ici"
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <a href=""> <button>Envoyer</button> </a>
+        <a
+          onclick="toggle()"
+          style="
+            text-decoration: none;
+            color: black;
+            font-family: system-ui;
+            font-size: 13px;
+          "
+          href="#"
+          >Fermer</a
+        >
+      </form>
+    </div>
+
+    <!-- ------------------------------------------------------------------------- -->
+    <footer>
+      <div>
+        <img
+          style="
+            margin-top: 40px;
+            width: 150px;
+            border: solid 5px;
+            border-radius: 50%;
+          "
+          src="/img/logo_rond.png"
+          alt=""
+        />
+        <h4>Fifa Skills Library</h4>
+      </div>
+      <div>
+        <ul id="menu_footer">
+          <a style="text-decoration: none" href="index.html">Accueil</a
+          ><br />
+          <a style="text-decoration: none" href="/html/but_dabonnees.html"
+            >But_d'abonnés</a
+          ><br />
+          <a style="text-decoration: none" href="/html/fifa_presentation.html"
+            >Présentation_Fifa</a
+          ><br />
+          <a style="text-decoration: none" href="/html/pre_bibli.html"
+            >Bibliotèques</a
+          ><br />
+          <a style="text-decoration: none" href="/html/nous_joindre.html"
+            >Nous_joindre</a
+          ><br />
+        </ul>
+      </div>
+      <div id="footer_logos">
+        <a target="_blank" href="https:/facebook.com"
+          ><img src="/img/facebook.png" alt=""
+        /></a>
+        <a target="_blank" href="https:/instagram.com">
+          <img src="/img/instagram (1).png" alt=""
+        /></a>
+        <a target="_blank" href="https:/twitter.com">
+          <img src="/img/twitter.png" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
